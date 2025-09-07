@@ -1,0 +1,13 @@
+com\soccer\repository\EventRepository.class
+com\soccer\controller\PageController.class
+com\soccer\model\User.class
+com\soccer\controller\AdminController.class
+com\soccer\controller\LoginController.class
+com\soccer\controller\ErrorController.class
+com\soccer\model\Event.class
+com\soccer\repository\UserRepository.class
+com\soccer\controller\VerifyController.class
+com\soccer\SoccerAppApplication.class
+com\soccer\EmailService.class
+com\soccer\controller\ForgotPasswordController.class
+com\soccer\controller\RegisterController.class
