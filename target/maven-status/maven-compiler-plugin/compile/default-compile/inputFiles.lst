@@ -6,6 +6,7 @@ D:\SOCCERAPP\src\main\java\com\soccer\controller\PageController.java
 D:\SOCCERAPP\src\main\java\com\soccer\controller\RegisterController.java
 D:\SOCCERAPP\src\main\java\com\soccer\controller\VerifyController.java
 D:\SOCCERAPP\src\main\java\com\soccer\EmailService.java
+D:\SOCCERAPP\src\main\java\com\soccer\filter\SessionFilter.java
 D:\SOCCERAPP\src\main\java\com\soccer\model\Event.java
 D:\SOCCERAPP\src\main\java\com\soccer\model\User.java
 D:\SOCCERAPP\src\main\java\com\soccer\repository\EventRepository.java

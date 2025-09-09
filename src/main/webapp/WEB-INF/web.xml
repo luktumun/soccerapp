@@ -3,4 +3,18 @@
          xsi:schemaLocation="http://jakarta.ee/xml/ns/jakartaee
                              http://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+
+
+         <filter>
+    <filter-name>SessionFilter</filter-name>
+    <filter-class>com.soccer.filter.SessionFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>SessionFilter</filter-name>
+    <url-pattern>/welcome</url-pattern>
+     <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+
+</filter-mapping>
 </web-app>

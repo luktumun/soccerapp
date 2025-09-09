@@ -1,5 +1,6 @@
 com\soccer\repository\EventRepository.class
 com\soccer\controller\PageController.class
+com\soccer\filter\SessionFilter.class
 com\soccer\model\User.class
 com\soccer\controller\AdminController.class
 com\soccer\controller\LoginController.class
