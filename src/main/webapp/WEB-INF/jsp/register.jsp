@@ -9,7 +9,10 @@
     <link rel="icon" type="image/x-icon" href="<c:url value='/images/favicon.ico' />">
 </head>
 <body>
+    <%@ include file="/WEB-INF/views/fragments/header.jspf" %>
+
 <div class="center-wrapper">
+    
     <div class="card">
         <img src="<c:url value='/images/logocreate.png' />" alt="FootballClubDoodhwa Logo" style="width:150px; height:auto;" />
         <h2>Register</h2>
@@ -34,6 +37,7 @@
             </div>
         </form>
     </div>
-</div>
+</div><%@ include file="/WEB-INF/views/fragments/footer.jspf" %>
+
 </body>
 </html>

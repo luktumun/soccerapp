@@ -14,16 +14,64 @@
     <meta charset="UTF-8">
     <title>Welcome | FootballClubDoodhwa</title>
     <link rel="stylesheet" href="<c:url value='/css/style.css' />">
-    <link rel="icon" type="image/x-icon" href="<c:url value='/images/favicon.ico' />">
+    <link rel="icon" href="<c:url value='/images/favicon.ico' />">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".home-toggle");
+        const dropdown = document.querySelector(".home-dropdown");
+
+        toggle.addEventListener("click", function (e) {
+            e.stopPropagation();
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        });
+
+        document.addEventListener("click", function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.style.display = "none";
+            }
+        });
+    });
+</script>
 <body>
+    <div class="header">
+        <div class="logo">
+            <img src="<c:url value='/images/logocreate.png' />" alt="FootballClubDoodhwa Logo" />
+        </div>
+        <div class="home-menu">
+            <button class="home-toggle" aria-label="Home Menu">🏠</button>
+            <div class="home-dropdown">
+                <ul>
+                    <li><a href="https://pcgamesportvideo.netlify.app/" target="_blank">🪖 War Games Portal</a></li>
+                    <li><a href="https://reactgamehub.netlify.app/" target="_blank">⚽ Soccer Game Hub</a></li>
+                    <li><a href="<c:url value='/logout' />">🔓 Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+    
+
+
 <div class="center-wrapper">
     <div class="card">
-        <img src="<c:url value='/images/logocreate.png' />" alt="FootballClubDoodhwa Logo" style="width:150px; height:auto;" />
-
         <h2>Welcome, <%= user.getName() %>!</h2>
         <p>Your role: <%= user.getRole() %></p>
-        
+
+        <!-- 🌐 War Games Portal with Icon -->
+<div class="external-links">
+    <h3>Explore More</h3>
+
+    <div class="game-banner war-game">
+        <img src="<c:url value='/images/apply uploaded image.png' />" alt="Order of War Icon" class="game-icon" />
+        <a href="https://reactgamehub.netlify.app/" target="_blank" class="game-link">
+            🪖 War Games Portal &   ⚽ Soccer Game Hub
+
+        </a>
+    </div>
+</div>
+
+
         <c:if test="${user.role == 'admin'}">
             <h3>Upload New Event</h3>
             <form method="POST" action="<c:url value='/admin/event/upload' />">
@@ -35,34 +83,25 @@
         </c:if>
 
         <h3>Upcoming Events</h3>
-<table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-        <th>Title</th>
-        <th>Date</th>
-        <th>Details</th>
-    </tr>
-    <c:forEach var="event" items="${events}">
-        <tr>
-            <td>${event.title}</td>
-            <td>${event.eventDate}</td>
-            <td>${event.details}</td>
-        </tr>
-    </c:forEach>
-</table>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Details</th>
+            </tr>
+            <c:forEach var="event" items="${events}">
+                <tr>
+                    <td>${event.title}</td>
+                    <td>${event.eventDate}</td>
+                    <td>${event.details}</td>
+                </tr>
+            </c:forEach>
+        </table>
 
-        <a href="<c:url value='/logout' />" style="color: red;">Logout</a>
-    </div>
-    <div style="margin-top: 20px;">
        
-        <a href="https://pcgamesportvideo.netlify.app/" target="_blank" class="external-link-button" style="color: #0f4987; font-weight: bold"; >
-            🌐 Visit AIFF Official Site
-        </a>
-        <a href="https://reactgamehub.netlify.app/" target="_blank" class="external-link-button" style="color: #0f4987; font-weight: bold";>
-            🌐 Visit AIFF Official Site
-        </a>
     </div>
-   
-
 </div>
+
+<%@ include file="/WEB-INF/views/fragments/footer.jspf" %>
 </body>
 </html>
