@@ -18,9 +18,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f4987;
+    background-color: white;
     padding: 10px 20px;
-    color: white;
+    color: rgb(29, 208, 32);
 }
 
 .header .logo img {
@@ -31,7 +31,7 @@ body {
     background: none;
     border: none;
     font-size: 28px;
-    color: white;
+    color: rgb(29, 208, 32);
     cursor: default;
     font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 
@@ -46,8 +46,8 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #0f4987;
-    color: white;
+    background-color: white;
+    color: rgb(29, 208, 32);
     text-align: center;
     padding: 10px;
     font-size: 14px;
@@ -65,7 +65,7 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgb(29, 208, 32);
     width: 80%;
     max-width: 800px;
     text-align: center;
@@ -74,7 +74,7 @@ body {
 /* Headings */
 h2, h3 {
     margin-bottom: 20px;
-    color: #0f4987;
+    color: rgb(29, 208, 32);
 }
 
 /* Form Elements */
@@ -96,8 +96,8 @@ form textarea {
 }
 
 form button {
-    background-color: #0f4987;
-    color: #fff;
+    background-color: #abc1d8;
+    color: rgb(29, 208, 32);
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -106,12 +106,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #0c3c6e;
+    background-color: #5d8cbf;
 }
 
 /* Links */
 a {
-    color: #0f4987;
+    color: rgb(29, 208, 32);
     text-decoration: none;
     cursor: default;
 }
@@ -137,12 +137,12 @@ table th, table td {
     padding: 10px;
     text-align: left;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 3px solid rgb(29, 208, 32);
 }
 
 table th {
     background-color: #e9ecef;
-    color: #0f4987;
+    color: #cfd93a;
 }
 
 table tr:nth-child(even) td {
@@ -161,7 +161,7 @@ table td:nth-child(3) { color: #0dcaf0; }
 
 .external-links h3 {
     font-size: 24px;
-    color: #0f4987;
+    color: rgb(29, 208, 32);
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
     text-shadow: 1px 1px 2px #ccc;
@@ -176,8 +176,8 @@ table td:nth-child(3) { color: #0dcaf0; }
     width: 80%;
     max-width: 800px;
     height: 300px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    background-color: #1c1c1c;
+    box-shadow: 0 4px 12px rgb(29, 208, 32);
+    background-color: #f1ebeb;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -208,13 +208,13 @@ table td:nth-child(3) { color: #0dcaf0; }
 }
 
 .game-link:hover {
-    color: #fff;
+    color: #cb5353;
     transform: scale(1.05);
 }
 
 /* Soccer Theme */
 .soccer-game {
-    background-color: #0f4987;
+    background-color: #b5c2d1;
 }
 
 .soccer-game .game-link {
@@ -233,7 +233,7 @@ table td:nth-child(3) { color: #0dcaf0; }
     background: none;
     border: none;
     font-size: 28px;
-    color: white;
+    color: rgb(224, 154, 141);
     cursor: default;
     font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
@@ -243,9 +243,9 @@ table td:nth-child(3) { color: #0dcaf0; }
     position: absolute;
     right: 0;
     top: 40px;
-    background-color: #0f4987;
+    background-color: #2bca5b;
     border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(192, 219, 35, 0.2);
     z-index: 1000;
     min-width: 200px;
 }
@@ -257,7 +257,7 @@ table td:nth-child(3) { color: #0dcaf0; }
 }
 
 .home-dropdown li {
-    border-bottom: 1px solid #0c3c6e;
+    border-bottom: 1px solid #d2531c;
 }
 
 .home-dropdown li:last-child {
@@ -274,8 +274,8 @@ table td:nth-child(3) { color: #0dcaf0; }
 }
 
 .home-dropdown a:hover {
-    background-color: #0c3c6e;
-    color: white;
+    background-color: #d51730;
+    color: rgb(29, 208, 32);
 }
 
 /* Responsive */
